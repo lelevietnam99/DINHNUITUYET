@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mục Lục - Đỉnh Núi Tuyết</title>
+    
+    <!-- Nhúng FontAwesome để lấy icon fa-mountain -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* Thiết lập nền Đỉnh núi tuyết trắng xóa */
+        body, html {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            font-family: 'Times New Roman', Times, serif;
+            /* Ảnh nền núi tuyết sắc nét từ Unsplash */
+            background-image: url('https://images.unsplash.com/photo-1483921020237-2ff51e8e4b22?q=80&w=2500&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            display: flex;
+            justify-content: center;
+            box-sizing: border-box;
+        }
+
+        /* Thêm khoảng không xung quanh để cuộn trang mượt mà */
+        body {
+            padding: 50px 20px;
+        }
+
+        /* Khung nội dung chính với hiệu ứng kính mờ tông sáng (băng tuyết) */
+        .container {
+            background: rgba(255, 255, 255, 0.75);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            padding: 40px 50px;
+            border-radius: 20px;
+            max-width: 1200px;
+            width: 100%;
+            border: 1px solid rgba(255, 255, 255, 0.8);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            margin: auto;
+        }
+
+        h1 {
+            color: #1a365d; /* Màu xanh đậm của bầu trời lạnh */
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            text-shadow: 1px 1px 3px rgba(255,255,255,0.8);
+        }
+        
+        .subtitle {
+            color: #2b6cb0;
+            font-size: 1.2rem;
+            font-style: italic;
+            margin-bottom: 40px;
+        }
+
+        /* Lưới chứa 100 link */
+        .grid-container {
+            display: grid;
+            /* Tự động chia cột, mỗi cột rộng tối thiểu 130px */
+            grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+            gap: 15px;
+        }
+
+        /* Style cho từng nút link */
+        .link-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.9);
+            color: #2b6cb0; /* Xanh băng tuyết */
+            text-decoration: none;
+            padding: 15px 10px;
+            border-radius: 12px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border: 1px solid rgba(43, 108, 176, 0.2);
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .link-item i {
+            font-size: 1.8rem;
+            margin-bottom: 8px;
+            color: #4299e1;
+            transition: all 0.3s ease;
+        }
+
+        /* Hiệu ứng khi lướt chuột qua nút */
+        .link-item:hover {
+            background: #2b6cb0;
+            color: #ffffff;
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+        }
+
+        .link-item:hover i {
+            color: #ffffff;
+        }
+
+        /* Thanh cuộn */
+        ::-webkit-scrollbar { width: 10px; }
+        ::-webkit-scrollbar-track { background: rgba(255, 255, 255, 0.5); }
+        ::-webkit-scrollbar-thumb { background: #4299e1; border-radius: 5px; }
+        ::-webkit-scrollbar-thumb:hover { background: #2b6cb0; }
+        
+        /* Responsive */
+        @media (max-width: 600px) {
+            .container { padding: 30px 20px; }
+            h1 { font-size: 2rem; }
+            .grid-container { grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Đỉnh Núi Tuyết</h1>
+        <div class="subtitle">Tổng hợp trích đoạn - Tuyển tập 1 đến 100</div>
+        
+        <!-- Khung chứa các link sẽ được tạo tự động -->
+        <div class="grid-container" id="link-grid"></div>
+    </div>
+
+    <script>
+        // Sử dụng JavaScript để tự động tạo 100 link giúp code gọn gàng
+        const gridContainer = document.getElementById('link-grid');
+        const totalLinks = 100;
+
+        for (let i = 1; i <= totalLinks; i++) {
+            // Tạo thẻ <a>
+            const a = document.createElement('a');
+            a.href = `index${i}.html`;
+            a.className = 'link-item';
+            
+            // Chèn icon fa-mountain và chữ Tập i
+            a.innerHTML = `<i class="fa-solid fa-mountain"></i> Tập ${i}`;
+            
+            // Thêm vào lưới
+            gridContainer.appendChild(a);
+        }
+    </script>
+
+</body>
+</html>

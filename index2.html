@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vân Du Tự Tại - Đỉnh Núi Tuyết</title>
+    <style>
+        /* Cấu trúc nền vũ trụ */
+        body, html {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh; /* Đổi thành min-height để trang có thể dài ra theo nội dung */
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #050505;
+            background-image: url('https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?q=80&w=2500&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #f1f1f1;
+            display: flex;
+            justify-content: center;
+            box-sizing: border-box;
+        }
+
+        /* Thêm khoảng không xung quanh để chữ không bị dính lề khi cuộn */
+        body {
+            padding: 40px 20px;
+        }
+
+        /* Hiệu ứng các ngôi sao lấp lánh */
+        .stars {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: transparent url('https://www.transparenttextures.com/patterns/stardust.png');
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        /* Khung nội dung chính */
+        .container {
+            position: relative;
+            z-index: 1;
+            background: rgba(10, 15, 25, 0.85);
+            backdrop-filter: blur(15px);
+            padding: 50px;
+            border-radius: 20px;
+            max-width: 700px;
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            box-shadow: 0 10px 50px rgba(0, 0, 0, 0.8);
+            text-align: justify;
+            margin: auto; /* Mấu chốt để căn giữa mượt mà mà không bị cắt phần đỉnh */
+        }
+
+        h1 {
+            text-align: center;
+            color: #ffd700;
+            font-size: 2rem;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        .dialogue {
+            margin-bottom: 25px;
+            line-height: 1.8;
+            font-size: 1.25rem;
+        }
+
+        .speaker {
+            font-weight: bold;
+            color: #ffd700;
+        }
+
+        .source {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 1rem;
+            color: #bbb;
+            font-style: italic;
+            border-top: 1px solid #444;
+            padding-top: 20px;
+        }
+
+        /* Thanh cuộn (Scrollbar) */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-thumb { background: #ffd700; border-radius: 4px; }
+    </style>
+</head>
+<body>
+
+    <div class="stars"></div>
+
+    <div class="container">
+        <h1>Vân Du Tự Tại</h1>
+        
+        <div class="dialogue">
+            Các cung nữ tung tăng chạy vào vườn ngắm hoa đùa lá... Chợt các cô khựng lại nhìn thấy một Sa Môn ngồi thiền trên phiến đá. Sau giây lát ngạc nhiên, các cô bước lại gần chắp tay xá rồi hỏi: "Thưa Ngài Sa Môn, Ngài có phải là Pindola Bharadvaja con của quan đại thần... không ạ? Sao Ngài bỗng nhiên trở thành Sa Môn, và sao Ngài lại vào vườn thượng uyển của vua Udena (Ưu điền) ngồi thế này?"
+        </div>
+
+        <div class="dialogue">
+            <span class="speaker">Tôn Giả Pindola:</span> "Này các cô cung nữ, ta đúng là Pindola Bharadvaja (Tân Đầu Lư Phả La Đoạ) con của quan đại thần... Ta có nhân duyên gặp được Thế Tôn Chánh Đẳng Giác, bậc Giác Ngộ phi thường, đã hoá độ cho ta thoát được vô minh. Ta nay có thể tự tại đi đâu đến đâu tuỳ thích."
+        </div>
+
+        <div class="dialogue">
+            <span class="speaker">Cung nữ:</span> "Thưa Sa Môn Pindola, nếu Ngài đã đắc đạo, Ngài có thể cho chúng con biết nghiệp của chúng con hay không ạ?"
+        </div>
+
+        <div class="dialogue">
+            <span class="speaker">Tôn Giả Pindola:</span> "Này cung nữ Samavati, cô đến đây từ cõi trời Tam Thập Tam, là con gái của Càn thát bà thần âm nhạc. Kiếp này cô rất giỏi âm nhạc và vẫn còn vài phước báo nên được vua yêu mến. Chẳng bao lâu cô sẽ được vua đưa lên thứ phi."
+        </div>
+
+        <div class="dialogue">
+            <span class="speaker">Các cung nữ:</span> "Ồ, chị Samavati sẽ lên thứ phi, hay quá."
+        </div>
+
+        <div class="dialogue">
+            <span class="speaker">Tôn Giả Pindola nói tiếp:</span> "Này các cung nữ, mọi việc trên đời đều có nhân quả nghiệp báo. Ai đã từng gieo trồng những thiện nghiệp thì sẽ có được phước lành hưởng được giàu sang quyền quý. Ai đã từng làm những nghiệp bất thiện thì phải hứng chịu nhiều khổ đau."
+        </div>
+
+        <div class="dialogue">
+            <span class="speaker">Cung nữ Samavati:</span> "Thưa Tôn Giả Pindola Bharadvaja (Tân đầu Lư Phả La Đoạ), thế còn một Sa Môn tu hành đúng Chánh Pháp thì sẽ được kết quả gì ạ?"
+        </div>
+
+        <div class="dialogue">
+            <span class="speaker">Tôn giả Pindola:</span> "Này Samavati, có Thế Tôn Chánh Đẳng Giác Gotama đến từ Sakiya đã xuất hiện và tuyên giảng Chánh Pháp vô thượng hướng về giải thoát giác ngộ. Thế Tôn dạy con đường thoát ly các dục lạc, lìa xa những phiền não, an trú thiền định, chứng các Thánh quả, có thể chấm dứt vô minh tái sinh."
+        </div>
+
+        <div class="source">
+            (Trích truyện tranh "Đỉnh Núi Tuyết" - Tập 20: Vân Du Tự Tại)
+        </div>
+    </div>
+
+</body>
+</html>

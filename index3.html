@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cây Cối Cũng Có Tâm Linh - Đỉnh Núi Tuyết</title>
+    <style>
+        /* Cấu trúc nền thiên nhiên tĩnh lặng */
+        body, html {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #050505;
+            /* Hình nền khu rừng sương mù huyền bí từ Unsplash */
+            background-image: url('https://images.unsplash.com/photo-1511497584788-876760111969?q=80&w=2500&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #f1f1f1;
+            display: flex;
+            justify-content: center;
+            box-sizing: border-box;
+        }
+
+        /* Khoảng không xung quanh để nội dung không bị dính sát lề khi cuộn */
+        body {
+            padding: 40px 20px;
+        }
+
+        /* Khung nội dung chính (Hiệu ứng kính mờ - Glassmorphism) */
+        .container {
+            position: relative;
+            z-index: 1;
+            background: rgba(12, 18, 14, 0.88); /* Tông màu xanh rêu tối */
+            backdrop-filter: blur(15px);
+            padding: 50px;
+            border-radius: 20px;
+            max-width: 750px;
+            border: 1px solid rgba(139, 195, 74, 0.3); /* Viền màu xanh lục nhạt */
+            box-shadow: 0 10px 50px rgba(0, 0, 0, 0.8);
+            text-align: justify;
+            margin: auto; /* Căn giữa mượt mà */
+        }
+
+        h1 {
+            text-align: center;
+            color: #8bc34a; /* Xanh lục nhạt: tượng trưng cho cây cối, sự sống */
+            font-size: 2.2rem;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        .dialogue {
+            margin-bottom: 25px;
+            line-height: 1.8;
+            font-size: 1.25rem;
+        }
+
+        .speaker {
+            font-weight: bold;
+            color: #ffd700; /* Vàng kim cho tên người nói */
+        }
+
+        .source {
+            text-align: center;
+            margin-top: 45px;
+            font-size: 1rem;
+            color: #bbb;
+            font-style: italic;
+            border-top: 1px solid #444;
+            padding-top: 20px;
+            line-height: 1.6;
+        }
+
+        /* Thanh cuộn (Scrollbar) */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-thumb { background: #8bc34a; border-radius: 4px; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Cây Cối Cũng Có Tâm Linh</h1>
+        
+        <div class="dialogue">
+            <span class="speaker">Các tỳ kheo hỏi:</span> "Thưa tôn giả Upali, hôm trước tôn giả dạy chúng con không được chặt phá cây cối vì có cây là chỗ ở của quỷ thần, phá cây là làm tổn hại chúng sinh. Chúng con rất tuân thủ điều luật này. Nhưng thưa tôn giả Upali, thế khi trưởng giả Ghosita thuê thợ lên rừng đốn cây về làm nhà trong tinh xá cho chư Tăng ở thì như thế nào ạ?"
+        </div>
+
+        <div class="dialogue">
+            <span class="speaker">Tôn giả Upali:</span> "Này các hiền giả tỳ kheo ở Kosambi, chúng ta là tỳ kheo sa môn tu hành cầu giải thoát, nên cẩn thận từng chút tránh gây oan trái với chúng sinh. Vì gây oan trái với chúng sinh rồi thì thế nào cũng phải tái sinh để trả nợ."
+        </div>
+
+        <div class="dialogue">
+            <span class="speaker">Tôn giả Upali giảng giải thêm:</span> "Khi một tỳ kheo muốn hạ cây làm nhà thì phải đứng trước cây đó mà khấn xin, sau đó chờ ba ngày xem trong giấc mộng của mình có ai đến phản đối gì không. Nếu có giấc mộng lành, hoặc không thấy gì cả thì được hạ cây. Nếu có giấc mộng dữ thì tức là quỷ thần dạ xoa ở cây đó không chịu nhường cây, thì tỳ kheo phải đi tìm cây khác."
+        </div>
+
+        <div class="dialogue">
+            <span class="speaker">Tôn giả Upali nói tiếp:</span> "Này các tỳ kheo ở Kosambi, người thế tục vì mưu sinh mà gây không biết bao nhiêu nghiệp chướng, nếu họ biết làm phước thì nghiệp xấu được cấn trừ bớt. Nếu họ ngu si hưởng thụ thì bao nhiêu nghiệp xấu phải có lúc đền trả rất cực khổ. Những cây gỗ này do các tiều phu hạ đem về rao bán, ai cần thì cứ mua."
+        </div>
+
+        <div class="dialogue">
+            <span class="speaker">Tôn giả Upali kết luận:</span> "Trưởng giả Ghosita mua cây để cất nhà trong tinh xá này thì thôi, cây cũng đã hạ rồi, nếu các quỷ thần để tâm hoan hỷ thì họ sẽ có duyên với Chánh pháp, theo cây về đây để quanh quẩn tu học với chư Tăng cũng tốt."
+        </div>
+
+        <div class="source">
+            (Trích trong sách "ĐỈNH NÚI TUYẾT" tập 27: KỶ CƯƠNG ĐỆ NHẤT - từ trang 60 đến trang 64)
+        </div>
+    </div>
+
+</body>
+</html>
