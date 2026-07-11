@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chánh Kiến Và Tà Kiến - Đỉnh Núi Tuyết Tập 51</title>
+    <style>
+        /* Cấu trúc nền bình minh rực rỡ xua tan bóng tối */
+        body, html {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #0b141a;
+            /* Hình nền bình minh trên đỉnh núi thiêng liêng */
+            background-image: url('https://images.unsplash.com/photo-1472214103451-9374bd1c798e?q=80&w=2500&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #f1f1f1;
+            display: flex;
+            justify-content: center;
+            box-sizing: border-box;
+        }
+
+        /* Khoảng không xung quanh để nội dung không bị dính sát lề khi cuộn */
+        body {
+            padding: 40px 20px;
+        }
+
+        /* Hiệu ứng mờ ảo (Starfield/Bụi sáng) */
+        .stars {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: transparent url('https://www.transparenttextures.com/patterns/stardust.png');
+            z-index: 0;
+            pointer-events: none;
+            opacity: 0.4;
+        }
+
+        /* Khung nội dung chính (Hiệu ứng kính mờ - Glassmorphism) */
+        .container {
+            position: relative;
+            z-index: 1;
+            background: rgba(15, 20, 25, 0.88); /* Tông màu đen trầm ánh xanh */
+            backdrop-filter: blur(15px);
+            padding: 50px;
+            border-radius: 20px;
+            max-width: 850px;
+            border: 1px solid rgba(255, 183, 77, 0.3); /* Viền màu vàng cam nhạt */
+            box-shadow: 0 10px 50px rgba(0, 0, 0, 0.9);
+            text-align: justify;
+            margin: auto; /* Căn giữa mượt mà */
+        }
+
+        h1 {
+            text-align: center;
+            color: #ffca28; /* Vàng kim */
+            font-size: 2.2rem;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            line-height: 1.4;
+        }
+
+        .content {
+            margin-bottom: 25px;
+            line-height: 1.8;
+            font-size: 1.25rem;
+        }
+
+        .speaker {
+            font-weight: bold;
+            font-size: 1.3rem;
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+
+        /* Hộp hiển thị Tà Kiến (Màu đỏ sậm mang ý nghĩa cảnh báo, u tối) */
+        .wrong-view-box {
+            border-left: 4px solid #ef5350;
+            padding-left: 20px;
+            background: rgba(239, 83, 80, 0.05);
+            padding: 20px;
+            border-radius: 0 10px 10px 0;
+            margin-bottom: 30px;
+        }
+        
+        .wrong-view-box .speaker {
+            color: #ef5350;
+        }
+        
+        .wrong-view-box .highlight {
+            color: #ff8a80;
+        }
+
+        /* Hộp hiển thị Chánh Kiến (Màu vàng sáng mang ý nghĩa trí tuệ, khai sáng) */
+        .right-view-box {
+            border-left: 4px solid #ffca28;
+            padding-left: 20px;
+            background: rgba(255, 202, 40, 0.05);
+            padding: 20px;
+            border-radius: 0 10px 10px 0;
+            margin-bottom: 30px;
+        }
+
+        .right-view-box .speaker {
+            color: #ffca28;
+        }
+
+        .right-view-box .highlight {
+            color: #ffe082;
+        }
+
+        /* Hộp hiển thị Quả Báo của Chánh Kiến (Màu xanh lam trong trẻo, an lạc) */
+        .result-box {
+            border-left: 4px solid #81d4fa;
+            padding-left: 20px;
+            background: rgba(129, 212, 250, 0.05);
+            padding: 20px;
+            border-radius: 0 10px 10px 0;
+            margin-bottom: 30px;
+        }
+
+        .result-box .speaker {
+            color: #81d4fa;
+        }
+
+        .source {
+            text-align: center;
+            margin-top: 45px;
+            font-size: 1.05rem;
+            color: #bbb;
+            font-style: italic;
+            border-top: 1px dashed #555;
+            padding-top: 20px;
+            line-height: 1.6;
+        }
+
+        /* Thanh cuộn (Scrollbar) */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-thumb { background: #ffca28; border-radius: 4px; }
+        ::-webkit-scrollbar-track { background: rgba(0, 0, 0, 0.5); }
+    </style>
+</head>
+<body>
+
+    <div class="stars"></div>
+
+    <div class="container">
+        <h1>Chánh Kiến Và Tà Kiến</h1>
+        
+        <div class="content wrong-view-box">
+            <span class="speaker">- Này đại vương Bimbisara,</span> Tà kiến là khi có ai nghĩ rằng <span class="highlight">KHÔNG CÓ TỐT ĐẸP GÌ VỚI HÀNH VI BỐ THÍ, KHÔNG CÓ TỐT ĐẸP GÌ VỚI VIỆC CÚNG LỄ, KHÔNG CÓ TỐT ĐẸP GÌ VỚI VIỆC CÚNG DƯỜNG BẬC TU HÀNH CHÂN CHÍNH, KHÔNG CÓ NHÂN QUẢ NGHIỆP BÁO, KHÔNG CÓ LUÂN HỒI TÁI SINH, KHÔNG CÓ CÁC CÕI TRỜI HAY ĐỊA NGỤC, KHÔNG CẦN PHẢI HIẾU KÍNH CHA MẸ, THẦY TỔ, AI CŨNG NHƯ AI NÊN KHÔNG CẦN PHẢI TÔN TRỌNG BẤT CỨ AI DÙ ĐÓ LÀ BẬC LÃNH ĐẠO QUỐC ĐỘ ANH MINH, CÁC VỊ SA MÔN PHẠM HẠNH HAY NHỮNG BẬC HIỀN NHÂN ĐẠO ĐỨC.</span> Ai có tà kiến đó thì thế nào chết cũng đọa vào ác đạo địa ngục, súc sinh, ngạ quỷ.
+        </div>
+
+        <div class="content right-view-box">
+            <span class="speaker">- Này đại vương Bimbisara,</span> Chánh kiến là khi có ai hiểu rằng <span class="highlight">THẬT LÀ TỐT ĐẸP VỚI HÀNH VI BỐ THÍ, THẬT LÀ TỐT ĐẸP VỚI VIỆC CÚNG LỄ, THẬT LÀ TỐT ĐẸP VỚI VIỆC CÚNG DƯỜNG BẬC TU HÀNH CHÂN CHÍNH, CÓ NHÂN QUẢ NGHIỆP BÁO, CÓ LUÂN HỒI TÁI SINH, THẬT SỰ CÓ CÁC CÕI TRỜI HAY ĐỊA NGỤC, CẦN PHẢI HIẾU KÍNH CHA MẸ, THẦY TỔ, CẦN PHẢI TÔN TRỌNG NHỮNG BẬC ĐÁNG KÍNH NHƯ CÁC VỊ LÃNH ĐẠO QUỐC ĐỘ ANH MINH, CÁC VỊ SA MÔN PHẠM HẠNH HAY NHỮNG BẬC HIỀN NHÂN ĐẠO ĐỨC.</span>
+        </div>
+
+        <div class="content result-box">
+            <span class="speaker">- Này đại vương Bimbisara,</span> với chánh kiến như thế, người này sẽ làm được rất nhiều thiện nghiệp trong cuộc đời, và có thể đạt được nguyện ước sinh về các cõi trời, thậm chí họ còn có thể ước nguyện tu hành để đạt được giác ngộ giải thoát.
+        </div>
+
+        <div class="source">
+            (Trích Đỉnh Núi Tuyết Tập 51 - Có Một Ngọn Lửa Khác - trang 12-14)
+        </div>
+    </div>
+
+</body>
+</html>

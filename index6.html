@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sự Chuyển Mình Của Một Ngôi Làng - Đỉnh Núi Tuyết</title>
+    <style>
+        /* Cấu trúc nền vũ trụ và dòng sông đêm */
+        body, html {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #050505;
+            /* Hình nền dòng sông tĩnh lặng ban đêm */
+            background-image: url('https://images.unsplash.com/photo-1476610182048-b716b8518aae?q=80&w=2500&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #f1f1f1;
+            display: flex;
+            justify-content: center;
+            box-sizing: border-box;
+        }
+
+        /* Khoảng không xung quanh để nội dung không bị dính sát lề khi cuộn */
+        body {
+            padding: 40px 20px;
+        }
+
+        /* Hiệu ứng các ngôi sao lấp lánh (Starfield) */
+        .stars {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: transparent url('https://www.transparenttextures.com/patterns/stardust.png');
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        /* Khung nội dung chính (Hiệu ứng kính mờ - Glassmorphism) */
+        .container {
+            position: relative;
+            z-index: 1;
+            background: rgba(15, 20, 25, 0.88);
+            backdrop-filter: blur(15px);
+            padding: 50px;
+            border-radius: 20px;
+            max-width: 750px;
+            border: 1px solid rgba(255, 215, 0, 0.3); /* Viền màu vàng kim nhạt */
+            box-shadow: 0 10px 50px rgba(0, 0, 0, 0.8);
+            text-align: justify;
+            margin: auto; /* Căn giữa mượt mà */
+        }
+
+        h1 {
+            text-align: center;
+            color: #ffd700; /* Vàng kim */
+            font-size: 2.2rem;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        .content {
+            margin-bottom: 25px;
+            line-height: 1.8;
+            font-size: 1.25rem;
+        }
+
+        .speaker {
+            font-weight: bold;
+            color: #ffd700; /* Vàng kim cho tên người nói */
+        }
+
+        .context-text {
+            font-style: italic;
+            color: #e0e0e0;
+        }
+
+        .source {
+            text-align: center;
+            margin-top: 45px;
+            font-size: 1rem;
+            color: #bbb;
+            font-style: italic;
+            border-top: 1px dashed #444;
+            padding-top: 20px;
+            line-height: 1.6;
+        }
+
+        /* Thanh cuộn (Scrollbar) */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-thumb { background: #ffd700; border-radius: 4px; }
+    </style>
+</head>
+<body>
+
+    <div class="stars"></div>
+
+    <div class="container">
+        <h1>Sự Chuyển Mình Của Một Ngôi Làng</h1>
+        
+        <div class="content context-text">
+            Sau khi thọ thực, Đức Phật bảo ba người đến nghe Đức Phật thuyết pháp.
+        </div>
+
+        <div class="content">
+            <span class="speaker">Đức Phật dạy:</span><br>
+            - Này các gia chủ Bhusido, các người có biết tại sao ngôi làng này nghèo khổ như vậy không? Trước kia vùng đất này rất trù phú, dòng sông chảy rất gần bờ nên ghe thuyền tấp nập, nhiều đường xe dẫn về đây nên xe ngựa vận chuyển hàng hóa đến đi thường xuyên. Người dân buôn bán nhiều sản vật quý giá nên ai cũng khá giả, nhưng chỉ vì họ không biết đạo lý nên sống buông lung hưởng thụ và ích kỷ, khi phước của họ đã hết rồi thì dòng sông bồi đất và đổi dòng chảy ra xa mãi cách đây mấy do tuần.
+        </div>
+
+        <div class="content">
+            - Này các gia chủ Bhusido, họ ăn uống phung phí, ăn nửa bỏ nửa mà gọi là sang trọng. Họ bắt gia nhân gánh nước vào bồn đầy để tắm thỏa thích. Họ nhảy múa thâu đêm rồi không còn sức khỏe để phụng sự cho cộng đồng, họ chê những đồng tiền nhỏ, họ coi thường những ai lao động chân tay. Khi ghe thuyền không còn cập bến thuận lợi, họ muốn làm đường nối tiếp ra bờ sông mới nhưng bờ sông cạn nên ghe thuyền phải cập bến xa bờ. Họ lại làm các cầu tàu dẫn ra chỗ nước sâu để có thể cho ghe thuyền cập vào cầu tàu, nhưng ghe thuyền nhiều mà cầu tàu ít. Các ghe thuyền tranh nhau, đánh nhau, chết nhiều người và ai cũng sợ bỏ bến đó đi tìm chỗ bến an lành hơn. Thế là thị trấn vắng dần, cho đến trở thành đìu hiu như hôm nay.
+        </div>
+
+        <div class="content">
+            - Này các gia chủ Bhusido, hôm nay các người đã dốc hết chút gạo còn lại để nấu bữa cơm cúng dường Như Lai và chư Tăng, nên các người sẽ khiến cho làng mạc này trù phú trở lại...
+        </div>
+
+        <div class="content context-text">
+            Đức Phật và chư tăng ôm bát rời khỏi căn nhà nghèo đó. Ba người quỳ lạy theo.
+        </div>
+
+        <div class="source">
+            (Trích trong sách: ĐỈNH NÚI TUYẾT tập 26 BÀI KINH TRÊN SÔNG từ trang 127 đến trang 133)
+        </div>
+    </div>
+
+</body>
+</html>

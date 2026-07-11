@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Người Chăm Ngựa Thông Minh - Đỉnh Núi Tuyết</title>
+    <style>
+        /* Cấu trúc nền thiên nhiên hùng vĩ */
+        body, html {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #0b140c;
+            /* Hình nền thảo nguyên/thung lũng bát ngát */
+            background-image: url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=2500&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #f1f1f1;
+            display: flex;
+            justify-content: center;
+            box-sizing: border-box;
+        }
+
+        /* Khoảng không xung quanh để nội dung không bị dính sát lề khi cuộn */
+        body {
+            padding: 40px 20px;
+        }
+
+        /* Khung nội dung chính (Hiệu ứng kính mờ) */
+        .container {
+            position: relative;
+            z-index: 1;
+            background: rgba(15, 22, 16, 0.88); /* Tông màu xanh lá thẫm trầm ấm */
+            backdrop-filter: blur(15px);
+            padding: 50px;
+            border-radius: 20px;
+            max-width: 850px;
+            border: 1px solid rgba(139, 195, 74, 0.3); /* Viền xanh rêu nhạt */
+            box-shadow: 0 10px 50px rgba(0, 0, 0, 0.9);
+            text-align: justify;
+            margin: auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #ffb74d; /* Vàng cam sáng */
+            font-size: 2.2rem;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            line-height: 1.4;
+        }
+
+        .content {
+            margin-bottom: 25px;
+            line-height: 1.8;
+            font-size: 1.25rem;
+        }
+
+        .context-text {
+            font-style: italic;
+            color: #dcdcdc;
+            border-left: 3px solid #ffb74d;
+            padding-left: 15px;
+            background: rgba(255, 183, 77, 0.05);
+            padding: 15px;
+            border-radius: 0 10px 10px 0;
+            margin-bottom: 25px;
+        }
+
+        .speaker {
+            font-weight: bold;
+            color: #ffb74d; 
+            font-size: 1.3rem;
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+
+        .highlight-point {
+            color: #8bc34a; /* Xanh lục nổi bật cho các luận điểm */
+            font-weight: bold;
+        }
+
+        .source {
+            text-align: center;
+            margin-top: 45px;
+            font-size: 1rem;
+            color: #bbb;
+            font-style: italic;
+            border-top: 1px dashed #444;
+            padding-top: 20px;
+            line-height: 1.6;
+        }
+
+        /* Thanh cuộn (Scrollbar) */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-thumb { background: #8bc34a; border-radius: 4px; }
+        ::-webkit-scrollbar-track { background: rgba(0, 0, 0, 0.5); }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Người Chăm Ngựa Thông Minh</h1>
+        
+        <div class="content context-text">
+            Thị trưởng Dhananjaya mời đoàn khách vào phòng ngồi nói chuyện.
+        </div>
+
+        <div class="content">
+            <span class="speaker">- Các thương nhân:</span><br>
+            Kính thưa Ngài thị trưởng Dhananjaya, hôm nay anh em các thương nhân chúng tôi tại thành phố Saketa này đến thăm Ngài để có vài đề đạt xin ngài xét duyệt. Nếu những điều này được thực hiện thì sẽ rất có lợi cho thành phố Saketa của chúng ta.<br><br>
+            Kính thưa Ngài, thị trưởng Dhananjaya, hơn 7 năm qua gia đình Ngài dời xứ Anga (Ương Già) về đây lập nghiệp, đã biến nơi này từ một ngôi làng nhỏ bé trở thành một thành phố sầm uất thịnh vượng.<br><br>
+            Vua Pasenadi (Ba Tư Nặc) đã liên tiếp gửi các phái đoàn về thăm và khen ngợi. Gia đình của Ngài như có một sức hút bí mật nào đó mà cứ khiến cho nhiều người giàu có kéo về xây nhà cư ngụ rồi làm ăn sinh sống phát đạt. Mà có điều lạ là ai về đây dưới sự cai quản của Ngài rồi cũng đều khá giả. Cư dân của thành phố Saketa này đều ca tụng Ngài hết lời. Chúng tôi đến đây thăm Ngài để nói lên những thành ý của mọi người là như thế.<br><br>
+            Tiện thể, chúng tôi cũng xin Ngài cho phép 5 anh em chúng tôi được mở nhiều trang trại nuôi ngựa giống, để cung cấp cho những đoàn thương buôn đi ngang qua đây cần phải thay ngựa, thêm ngựa. Ngoài ra Vua Ba Tư Nặc cũng cần nhiều ngựa chiến để trang bị cho quân Kỵ mã có thể đặt mua ngựa với số lượng lớn. Xin Ngài Dhananjaya xem xét cấp đất cho chúng tôi làm trang trại.
+        </div>
+
+        <div class="content">
+            <span class="speaker">- Thị trưởng Dhananjaya:</span><br>
+            Này các vị trưởng giả, xin hãy để tôi gọi con gái Visakha của tôi hỏi ý kiến cháu một chút. Cháu Visakha là người góp ý kiến cho tôi rất nhiều trong việc cai quản Saketa này.
+        </div>
+
+        <div class="content context-text">
+            Thị trưởng Dhananjaya quay sang nói với gia nhân, lát sau một thiếu nữ cực kỳ xinh đẹp bước vào. Các trưởng giả ồ lên kinh ngạc.
+        </div>
+
+        <div class="content">
+            <span class="speaker">- Các trưởng giả:</span><br>
+            Thưa Ngài thị trưởng, chúng tôi từ lâu nghe đồn thị trưởng có con gái Visakha cực kỳ nết na đức hạnh và xinh đẹp. Nhưng khi nhìn thấy tận mắt thì thật là vượt sức tưởng tượng của chúng tôi. Chúng tôi cứ ngỡ cô Visakha này là tiên hiện ra chứ không phải người sinh ra ở cõi này.
+        </div>
+
+        <div class="content">
+            <span class="speaker">- Thị trưởng Dhananjaya:</span><br>
+            Này Visakha, các vị trưởng giả ở đây đến nhờ cha cho phép mở đất làm trang trại nuôi ngựa. Để cung cấp cho Vua và cho các thương buôn qua lại trên các tuyến đường, nhất là những thương buôn đi đến Vương quốc Magadha (Ma Kiệt Đà). Cha muốn hỏi con việc này có gì lợi và bất lợi chăng?
+        </div>
+
+        <div class="content context-text">
+            Visakha chắp tay chào các vị trưởng giả và nói:
+        </div>
+
+        <div class="content">
+            <span class="speaker">- Visakha:</span><br>
+            Thưa cha và thưa các vị khách quý, con là phận nữ nhi hèn mọn, không dám vô lễ vượt mặt cha và các vị. Nhưng cha đã hỏi thì con xin phép nói vài ý thô thiển ạ.<br><br>
+            Thưa cha, muốn làm trang trại nuôi ngựa thì phải khẩn được nhiều đất trồng cỏ nuôi ngựa, muốn khẩn nhiều đất thì phải phá thêm rừng hoặc thu đất có sẵn của nông dân đang canh tác. Thu lấy đất của nông dân thì phải đền bù sao cho họ hài lòng chứ đừng ép uổng họ mà thất đức.<br><br>
+            Còn phá thêm rừng thì phải cẩn thận, vì con thấy ở đâu phá rừng xong thì nơi đó hay gặp tai ương hoạn nạn về sau, dù rằng phá rừng lấy gỗ để làm nhà cho ngựa ở. Các vị phải làm lễ cúng xin phép Thần rừng, đồng thời hứa trồng lại rừng ở nơi khác để bù lại rừng đã mất. <br><br>
+            <span class="highlight-point">- THÊM NỮA:</span> Muốn bán được ngựa thì phải nuôi được giống ngựa cao to bền sức. Con nghe nói chỉ ở miền tuyết sơn mới có giống ngựa vạm vỡ này. Đừng vội vàng nuôi giống ngựa nhỏ thấp sức chở ít mà sau này không ai mua nữa. <br><br>
+            <span class="highlight-point">- THÊM NỮA:</span> Phải có những Mã y giỏi trị bệnh cho ngựa túc trực thường xuyên trong trang trại. Nhưng hiện nay theo con biết thì số mã y đã được Vua tuyển dụng vào quân trại cả rồi. Ta phải làm sao tự mình đào tạo mã y để sử dụng lâu dài.<br><br>
+            <span class="highlight-point">- THÊM NỮA:</span> Loại cỏ nuôi ngựa phải được chọn giống trồng cho kỹ, và không phải chỉ một loại cỏ. Ngoài cỏ còn có lúa, khoai nữa ạ. Ta chọn giống cỏ có tính bổ dưỡng và dược tính để ngựa ăn rồi ít bị bệnh vặt.<br><br>
+            <span class="highlight-point">- THÊM NỮA:</span> Những người chăm sóc ngựa phải được rèn luyện tâm hồn thương yêu ngựa thật sự chứ không phải làm qua loa. Ngựa cũng như người, thậm chí còn có trực giác hơn người. Mình yêu thương chúng thì chúng sẽ không phụ mình…
+        </div>
+
+        <div class="content context-text">
+            Visakha tiếp tục nói, các vị khách há hốc nghe…. (Ai nấy cũng đều tỏ vẻ ngạc nhiên, thán phục vì nghĩ cái người đứng trước mặt mình phải là một chuyên gia về ngựa với kinh nghiệm hàng chục năm mới nói được như vậy.)
+        </div>
+
+        <div class="content">
+            <span class="speaker">- Thị trưởng Dhananjaya:</span><br>
+            Này Visakha, cha cám ơn con đã có ý kiến quý giá như vậy. Các vị thấy thế nào ạ?
+        </div>
+
+        <div class="content">
+            <span class="speaker">- Khách:</span><br>
+            Thưa tiểu thư, tiểu thư được ai dạy những kiến thức về ngựa như thế này ạ?
+        </div>
+
+        <div class="content">
+            <span class="speaker">- Visakha:</span><br>
+            Thưa trưởng giả, con không có ai dạy về ngựa cả, con chỉ quan sát trong cuộc sống mà hiểu thôi ạ.
+        </div>
+
+        <div class="content">
+            <span class="speaker">- Thị trưởng Dhananjaya:</span><br>
+            Thưa quý vị, con gái Visakha của tôi rất lạ, có nhiều việc cháu chưa từng biết qua nhưng có ai hỏi đến là cháu chợt nhiên biết hết mọi điều.
+        </div>
+
+        <div class="content context-text">
+            Các vị khách xôn xao bàn cãi thích thú.
+        </div>
+
+        <div class="source">
+            (Trích: Đỉnh Núi Tuyết)
+        </div>
+    </div>
+
+</body>
+</html>

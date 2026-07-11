@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Những Yếu Tố Tạo Nên Kẻ Bần Tiện - Đỉnh Núi Tuyết</title>
+    <style>
+        /* Cấu trúc nền tĩnh mịch, trang nghiêm */
+        body, html {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #0c0808;
+            /* Hình nền thiên nhiên u mịch, trầm lắng */
+            background-image: url('https://images.unsplash.com/photo-1436891620584-47fd0e565afb?q=80&w=2500&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #f1f1f1;
+            display: flex;
+            justify-content: center;
+            box-sizing: border-box;
+        }
+
+        /* Khoảng không xung quanh để nội dung không bị dính sát lề khi cuộn */
+        body {
+            padding: 40px 20px;
+        }
+
+        /* Hiệu ứng bụi sáng lấp lánh nhẹ nhàng */
+        .stars {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: transparent url('https://www.transparenttextures.com/patterns/stardust.png');
+            z-index: 0;
+            pointer-events: none;
+            opacity: 0.3;
+        }
+
+        /* Khung nội dung chính (Hiệu ứng kính mờ - Glassmorphism) */
+        .container {
+            position: relative;
+            z-index: 1;
+            background: rgba(18, 12, 10, 0.9); /* Tông màu đen trầm ánh nâu/đỏ tĩnh mịch */
+            backdrop-filter: blur(15px);
+            padding: 50px;
+            border-radius: 20px;
+            max-width: 850px;
+            border: 1px solid rgba(255, 152, 0, 0.2); /* Viền màu vàng đồng nhạt */
+            box-shadow: 0 10px 50px rgba(0, 0, 0, 0.9);
+            text-align: justify;
+            margin: auto; /* Căn giữa mượt mà */
+        }
+
+        h1 {
+            text-align: center;
+            color: #ffb74d; /* Vàng kim */
+            font-size: 2.1rem;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            line-height: 1.4;
+        }
+
+        .content {
+            margin-bottom: 25px;
+            line-height: 1.8;
+            font-size: 1.25rem;
+            color: #e0e0e0;
+        }
+
+        /* Định dạng danh sách các yếu tố bần tiện */
+        .ban-tien-list {
+            list-style-type: none;
+            padding-left: 0;
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+
+        .ban-tien-list li {
+            position: relative;
+            padding-left: 35px;
+            margin-bottom: 18px;
+            line-height: 1.7;
+            font-size: 1.25rem;
+            color: #e0e0e0;
+        }
+
+        /* Biểu tượng đầu dòng mang tính chất cảnh tỉnh */
+        .ban-tien-list li::before {
+            content: '❖';
+            position: absolute;
+            left: 0;
+            color: #ef5350; /* Màu đỏ sậm cảnh báo */
+            font-size: 1.2rem;
+        }
+
+        /* Làm nổi bật cụm từ kết thúc */
+        .highlight-bad {
+            color: #ff8a65; /* Màu cam đỏ nhẹ nhàng nhưng nhấn mạnh */
+            font-style: italic;
+        }
+
+        /* Khung chứa lời dạy về sự cao quý và tinh tấn (Màu vàng sáng) */
+        .wisdom-box {
+            border-left: 4px solid #ffb74d;
+            background: rgba(255, 183, 77, 0.08);
+            padding: 25px;
+            border-radius: 0 12px 12px 0;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+
+        .wisdom-box p {
+            margin: 0 0 15px 0;
+            font-size: 1.3rem;
+            line-height: 1.8;
+            color: #ffe082;
+        }
+
+        .wisdom-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        .source {
+            text-align: center;
+            margin-top: 45px;
+            font-size: 1.05rem;
+            color: #bbb;
+            font-style: italic;
+            border-top: 1px dashed #444;
+            padding-top: 20px;
+            line-height: 1.6;
+        }
+
+        /* Thanh cuộn (Scrollbar) */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-thumb { background: #ffb74d; border-radius: 4px; }
+        ::-webkit-scrollbar-track { background: rgba(0, 0, 0, 0.5); }
+    </style>
+</head>
+<body>
+
+    <div class="stars"></div>
+
+    <div class="container">
+        <h1>Đức Phật Dạy Về Những Yếu Tố Tạo Nên Một Kẻ Bần Tiện</h1>
+        
+        <ul class="ban-tien-list">
+            <li>Ai nói lời thô tục, <span class="highlight-bad">đó là kẻ bần tiện.</span></li>
+            
+            <li>Ai tham lam ích kỷ, thấy gì cũng muốn lấy, chẳng ra tay giúp ai, <span class="highlight-bad">đó là kẻ bần tiện.</span></li>
+            
+            <li>Ai nói dối ba hoa, lừa lọc và gian xảo, khoe khoang và hợm mình, <span class="highlight-bad">đó là kẻ bần tiện.</span></li>
+            
+            <li>Ai bất hiếu bất nghĩa, chẳng phụng dưỡng mẹ cha, chẳng đền đáp nghĩa tình, <span class="highlight-bad">đó là kẻ bần tiện.</span></li>
+            
+            <li>Ai làm điều lầm lỗi, nhưng lại chẳng thấy lỗi, chẳng sinh lòng hổ thẹn, <span class="highlight-bad">đó là kẻ bần tiện.</span></li>
+            
+            <li>Ai tà dâm bất chính, lang chạ đủ hạng người chẳng luân thường đạo lý, <span class="highlight-bad">đó là kẻ bần tiện.</span></li>
+            
+            <li>Ai tham ăn tham ngủ, thích hưởng lạc tự thân, sống tầm thường qua ngày, <span class="highlight-bad">đó là kẻ bần tiện.</span></li>
+            
+            <li>Ai thích chê người khác để cho mình là cao, không biết tôn trọng người, <span class="highlight-bad">đó là kẻ bần tiện.</span></li>
+            
+            <li>Ai phỉ báng Đức Phật, hay đệ tử của Phật, dù xuất gia hay tại gia, <span class="highlight-bad">đó là kẻ bần tiện.</span></li>
+            
+            <li>Ai nuôi thú trong nhà, thân thiết như ruột thịt, rồi xẻ thịt mà ăn, <span class="highlight-bad">đó là kẻ bần tiện.</span></li>
+        </ul>
+
+        <div class="wisdom-box">
+            <p>- Bần tiện hay cao quý, chẳng phải vì đầu tóc, chẳng phải vì dòng tộc, mà bởi vì hạnh nghiệp. Những ai với hạnh nghiệp trong sáng và hiền thiện, khi bỏ báo thân này, cỡi xe trời mà bay. Những ai nhập thiền định, diệt ngã chấp vô minh, đầy đủ sáu thần thông chính là bậc tôn quý.</p>
+            
+            <p>- Thế gian bị thiêu đốt bởi ngọn lửa vô thường, thế nên hãy tinh tấn, tu hành trong chánh pháp để đến bến bờ an vui...</p>
+        </div>
+
+        <div class="source">
+            (Trích trong sách ĐỈNH NÚI TUYẾT, tập 21 - THIÊN NHÃN ĐỆ NHẤT, từ trang 24 đến trang 30)
+        </div>
+    </div>
+
+</body>
+</html>
