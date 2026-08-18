@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dòng Nước Trí Tuệ - Đỉnh Núi Tuyết</title>
+    <style>
+        /* Thiết lập nền cho toàn trang */
+        body, html {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            /* Ảnh nền cảnh thiên nhiên u tịch và thanh tịnh bên sông */
+            background-image: url('https://images.unsplash.com/photo-1518173946687-a4c88986a987?q=80&w=2500&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #f1f1f1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Khung chứa nội dung mờ ảo để dễ đọc chữ */
+        .container {
+            background-color: rgba(10, 15, 30, 0.84); /* Nền tối bán trong suốt */
+            backdrop-filter: blur(8px); /* Hiệu ứng kính mờ */
+            max-width: 850px;
+            padding: 40px 50px;
+            margin: 40px 20px;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.7);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            line-height: 1.8;
+            font-size: 1.12rem;
+        }
+
+        h1 {
+            text-align: center;
+            color: #ffd700;
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            line-height: 1.4;
+        }
+
+        .location {
+            text-align: center;
+            color: #8bbceb;
+            font-size: 1.2rem;
+            margin-bottom: 25px;
+            font-weight: 500;
+            font-style: italic;
+        }
+
+        p {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .dialogue {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .speaker-brahmin {
+            font-weight: bold;
+            color: #8bbceb;
+        }
+
+        .speaker-punnika {
+            font-weight: bold;
+            color: #ffd700;
+        }
+
+        .highlight {
+            color: #ffd700;
+            font-weight: bold;
+        }
+
+        .source {
+            text-align: center;
+            font-style: italic;
+            color: #d1e1f0;
+            margin-top: 35px;
+            font-size: 1.1rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            padding-top: 20px;
+            letter-spacing: 1px;
+        }
+
+        /* Hiệu ứng thanh cuộn đẹp mắt */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: rgba(0, 0, 0, 0.3); 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.3); 
+            border-radius: 5px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(255, 255, 255, 0.6); 
+        }
+
+        /* Responsive cho điện thoại */
+        @media (max-width: 600px) {
+            .container {
+                padding: 25px;
+                font-size: 1rem;
+            }
+            h1 {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Dòng Nước Trí Tuệ</h1>
+        <div class="location">Kinh thành Savathi. Một cô gái nô tì đi từ nhà ông Cấp Cô Độc ra mang theo các vò nước trên đầu, đến bờ sông lấy nước.</div>
+        
+        <p class="dialogue"><span class="speaker-brahmin">- Bà La Môn cởi trần ngồi bên bờ sông cầu nguyện, nhìn thấy cô gái nô tì liền hỏi chuyện:</span> “Này cô gái, cô là ai, gia đình nào mà đến bờ sông này lấy nước?”</p>
+        
+        <p class="dialogue"><span class="speaker-punnika">- Cô gái Punnika đáp:</span> “Thưa Bà La Môn, tôi tên là Punnika, nô tì nhà trưởng giả Sudatta, vì mùa lạnh này không có mưa nên các giếng nước trong nhà bị ít nước, tôi phải ra đội nước sông về để dùng cho đủ. Còn ông, ông ở đây làm gì nơi bờ sông lạnh lẽo này”.</p>
+        
+        <p class="dialogue"><span class="speaker-brahmin">- Bà La Môn:</span> “Này cô gái nô tì ngoan hiền kia. Tôi đến bờ sông để tắm sông cầu tẩy uế trước thân và tâm của mình. Nhờ thường hay đến sông tắm tẩy uế mà tôi sẽ được sinh thiên sau khi thân hoại mạng chung. Bây giờ còn lạnh, đợi chút có nắng lên bớt lạnh tôi sẽ xuống sông ngăm mình cho đủ nghi lễ”.</p>
+        
+        <p class="dialogue"><span class="speaker-punnika">- Punnika mỉm cười nói:</span> “Thưa Bà La Môn, tôi muốn nói điều này xin ngài đừng trách giận tôi nhé”.</p>
+        
+        <p class="dialogue"><span class="speaker-brahmin">- Bà La Môn:</span> “Này cô gái ngoan hiền kia, hãy nói những gì cô đang suy nghĩ, ta sẽ không trách giận đâu”.</p>
+        
+        <p class="dialogue"><span class="speaker-punnika">- Punnika:</span> “Thưa Bà La Môn, nếu nước sông có khả năng tẩy uế và làm cho chúng sinh sinh thiên sau khi thân hoại mạng chung, thì chắc là các loài cá ếch tôm cua sống dưới sông sẽ sinh thiên cả vì chúng nó ngâm mình dưới sông cả ngày mà”.</p>
+        
+        <p>Người Bà La Môn biến sắc.</p>
+        
+        <p class="dialogue"><span class="speaker-punnika">- Punnika nói tiếp:</span> “Ngay cả con người là thượng đẳng hơn tôm cua cá còn chưa chắc sinh thiên, thì làm sao tôm cá sinh thiên dễ dàng như thế được. Ngay cả con người còn phải làm rất nhiều thiện nghiệp thì mới có thể sinh thiên, chứ tuy làm người mà gây ác nghiệp thì sẽ đọa địa ngục thôi. Thưa Bà La Môn, tôi cho rằng có sự hiểu nhầm nơi các bản Kinh cổ xưa khi nói rằng nước sông tẩy uế thân tâm. Tôi cho rằng nước sông mà Kinh văn cổ đề cập ắt hẳn là một lời nói ẩn dụ. <span class="highlight">Con người phải dùng dòng nước trí tuệ của mình để tẩy uế thân tâm, chứ không phải nước sông của tôm cá này</span>”.</p>
+        
+        <p class="dialogue"><span class="speaker-brahmin">- Người Bà La Môn hỏi:</span> “Này cô gái ngoan hiền kia, hãy nói ta nghe, dòng nước trí tuệ là gì mà có khả năng tẩy uế thân tâm?”</p>
+        
+        <p class="dialogue"><span class="speaker-punnika">- Punnika đáp:</span> “Thưa Bà La Môn, dòng nước trí tuệ đó ta phải nhận được từ nơi bậc đạo sư khả kính, đó là bậc dạy cho ta biết nghiệp báo, tội phúc. Đó là bậc dạy cho ta biết nhanh chóng nhìn thấy tham khởi lên trong tâm để diệt trừ, nhanh chóng nhìn thấy sân khởi lên trong tâm để diệt trừ, nhanh chóng nhìn thấy đố kỵ kiêu mạn khởi lên trong tâm để diệt trừ. Các pháp bất thiện trong tâm ta khởi lên thì chỉ có ta nhìn thấy, và cũng chỉ có ta có trách nhiệm phải diệt trừ đi, thì đó là người biết tẩy uế thân tâm, đó là người sẽ sinh thiên sau khi thân hoại mạng chung”.</p>
+        
+        <p class="dialogue"><span class="speaker-brahmin">- Người Bà La Môn thẫn thờ giây lát rồi nói:</span> “Sao từ lâu ta không nghe những điều này nhỉ. Này cô gái ngoan hiền kia, ai là bậc đạo sư có thể truyền cho ta dòng nước trí tuệ đó?”</p>
+        
+        <p class="dialogue"><span class="speaker-punnika">- Punnika:</span> “Thưa Bà La Môn, chắc ngài cũng nghe danh tiếng Thế Tôn Gotama ở Tinh Xá Jetavana. Đó là bậc đạo sư siêu việt Pháp Giới, đó là Bậc Chánh Đẳng Giác Thầy của Nhân Thiên. Nếu ngài muốn có dòng nước trí tuệ để tẩy uế thân tâm thì hãy đi đến Thế Tôn Gotama”.</p>
+        
+        <p class="dialogue"><span class="speaker-brahmin">- Bà La Môn:</span> “Này cô gái ngoan hiền kia, ta đã nghe danh Sa Môn Gotama, nhưng ta không quan tâm vì ta nghĩ ta đã có giáo pháp của Bà La Môn truyền lại từ nhiều đời, ta đã thực hành các nghi lễ của Bà La Môn siêng năng, nên ta chẳng cần phải tìm đến Sa Môn Gotama nữa. Nhưng do đâu mà cô gái nghe được giáo pháp của Sa Môn Gotama vậy?”</p>
+        
+        <p class="dialogue"><span class="speaker-punnika">- Punnika:</span> “Thưa Bà La Môn, tôi là nô tì của trưởng giả Cấp Cô Độc, mà trưởng giả Cấp Cô Độc rất kính ngưỡng Thế Tôn Gotama, thường hay cúng dường, thưa hỏi, nên tôi cũng nghe theo”.</p>
+        
+        <p class="dialogue"><span class="speaker-brahmin">- Bà La Môn:</span> “Này cô gái ngoan hiền kia, ngoài ra cô còn nghe Sa Môn Gotama nói gì nữa không?”</p>
+        
+        <p class="dialogue"><span class="speaker-punnika">- Punnika:</span> “Thưa Bà La Môn, Thế Tôn Gotama còn dạy rằng cái gì có sinh ra thì sẽ có mất đi, <span class="highlight">thế gian này vô thường không bền lâu, chúng sinh vì vô minh sâu thẳm nên chấp ngã kiên cố, rồi sinh ra vô số phiền não lỗi lầm như tham sân si mạn nghi…</span> Vì trói buộc bởi vô minh chấp ngã nên chúng sinh mãi chìm trong đau khổ không thôi. Chỉ khi nào chúng sinh thực hành được Bát Chánh Đạo mới có thể đạt được giác ngộ cao siêu, hết vô minh, thoát chấp ngã, và không còn bị luân hồi đau khổ”.</p>
+        
+        <p class="dialogue"><span class="speaker-brahmin">- Người Bà La Môn rơi nước mắt nói:</span> “Ta rúng động vì những lời nói này. Ta sẽ tìm đến gặp Thế Tôn Gotama để xin dòng nước trí tuệ đó. Ta với Cấp Cô Độc vốn là bạn bè, ta sẽ đến gặp Cấp Cô Độc để xin cho cô gái hết thân phận nô tì và được làm gì cô muốn”.</p>
+        
+        <p class="dialogue"><span class="speaker-punnika">- Punnika bây giờ xúc động nói:</span> “Nếu ngài xin được cho tôi thoát kiếp nô tì, tôi sẽ lập tức xuất gia làm nữ Sa Môn dưới Pháp và Luật của Thế Tôn Gotama”.</p>
+        
+        <p>Cô gái đội vò nước đi với người Bà La Môn rời khỏi dòng sông.</p>
+        
+        <div class="source">Trích “Đỉnh Núi Tuyết tập 41: Canh Bạc Cuộc Đời” – biên soạn TT Thích Chân Quang.<br>(From Phước Quí)</div>
+    </div>
+
+</body>
+</html>

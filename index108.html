@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ngựa Chạy Trên Nước - Đỉnh Núi Tuyết Tập 37</title>
+    <style>
+        /* Thiết lập nền cho toàn trang */
+        body, html {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            /* Ảnh nền cảnh thiên nhiên u tịch và trang nghiêm */
+            background-image: url('https://images.unsplash.com/photo-1518173946687-a4c88986a987?q=80&w=2500&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #f1f1f1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Khung chứa nội dung mờ ảo để dễ đọc chữ */
+        .container {
+            background-color: rgba(10, 15, 30, 0.84); /* Nền tối bán trong suốt */
+            backdrop-filter: blur(8px); /* Hiệu ứng kính mờ */
+            max-width: 900px;
+            padding: 40px 50px;
+            margin: 40px 20px;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.7);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            line-height: 1.8;
+            font-size: 1.12rem;
+        }
+
+        h1 {
+            text-align: center;
+            color: #ffd700;
+            font-size: 1.8rem;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            line-height: 1.4;
+        }
+
+        .author {
+            text-align: center;
+            color: #8bbceb;
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        p {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .dialogue {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .speaker {
+            font-weight: bold;
+            color: #8bbceb;
+        }
+
+        .speaker-buddha {
+            font-weight: bold;
+            color: #ffd700;
+        }
+
+        .highlight {
+            color: #ffd700;
+            font-weight: bold;
+        }
+
+        .quote-box {
+            font-style: italic;
+            border-left: 4px solid #ffd700;
+            padding-left: 20px;
+            margin: 25px 0;
+            color: #d1e1f0;
+            background-color: rgba(255, 255, 255, 0.04);
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border-radius: 0 8px 8px 0;
+            text-align: center;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+        }
+
+        .source {
+            text-align: center;
+            font-style: italic;
+            color: #d1e1f0;
+            margin-top: 35px;
+            font-size: 1.1rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            padding-top: 20px;
+            letter-spacing: 1px;
+        }
+
+        /* Hiệu ứng thanh cuộn đẹp mắt */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: rgba(0, 0, 0, 0.3); 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.3); 
+            border-radius: 5px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(255, 255, 255, 0.6); 
+        }
+
+        /* Responsive cho điện thoại */
+        @media (max-width: 600px) {
+            .container {
+                padding: 25px;
+                font-size: 1rem;
+            }
+            h1 {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Ngựa Chạy Trên Nước</h1>
+        <div class="author">Đỉnh Núi Tuyết Tập 37 - Thượng Tọa Thích Chân Quang</div>
+        
+        <p>Tại cung điện Vua Bimbisara:</p>
+        
+        <p class="dialogue"><span class="speaker">- Thị vệ quỳ xuống tâu:</span> “Thưa Đại Vương Bimbisara (Bình Sa), có quan chánh sứ xin triều kiến. Đã kiểm tra thân thể, không có gì sai”.</p>
+        
+        <p>Vua Bimbisara gật đầu cho vào.</p>
+        
+        <p class="dialogue"><span class="speaker">- Quan chánh sứ vào quỳ tâu:</span> “Thưa Đại Vương Bimbisara, vâng lệnh đại vương, thần đã làm nhiều cái đĩa vàng, trên đó khắc chữ nói về Thế Tôn Gotama, nói về Chánh Pháp của Thế Tôn, nói về chúng Tăng của Thế Tôn. Hiện nay phía nam của Vương Quốc Magadha chúng ta còn có 32 tiểu Quốc lệ thuộc. Thần đã đúc được trước sai tất cả 35 cái đĩa vàng, đã phát được một số và sẵn sàng đợi lệnh của Đại Vương để đem đi phát cho các vị tiểu Vương ở xa các đĩa còn lại”.</p>
+        
+        <p class="dialogue"><span class="speaker">- Vua Bimbisara nói:</span> “Ở xa phía nam, gần biển, có xứ Kukkuta, có vị tiểu Vương tên là Kappina (Kiếp Tân Na), nghe nói rất đạo đức và trí tuệ. Cứ vài năm ta lại cho gửi quà thăm hỏi, đối lại Vua Kappina đó cũng gửi quà để bày tỏ sự thần phục đối với ta. Theo danh sách thì chưa có đĩa vàng nào được gửi đến cho Vua Kappina đó cả. Lần này, khanh hãy gửi một đĩa vàng giới thiệu về Thế Tôn cho Vua Kappina đi nhé. Đường đi sẽ rất xa đó”.</p>
+        
+        <p>Quan chánh sứ chắp tay xá lạy rồi lui. Quan chánh sứ ở tại sảnh của mình dặn dò 10 sứ giả:</p>
+        
+        <p class="dialogue"><span class="speaker">- Quan chánh sứ:</span> “Này các sứ giả, Đại Vương Bimbisara có vẻ quan tâm đặc biệt đến Vua Kappina ở xứ Kukkuta, nên ta không cho các ông đem đĩa vàng đi nhiều nơi, mà chỉ đem duy nhất một đĩa vàng đến xứ Kukkuta mà thôi. Đường đi sẽ rất xa nên các ông phải cẩn thận mọi thứ. Tiền bạc, lương thực, gươm đao, hiệu lệnh mọi thứ đều phải chu đáo. Chỉ được ghé nghỉ ở công đường có lính bảo vệ, không được nghỉ lại ở nơi vắng vẻ. Chiếc đĩa vàng này nặng hai cân vàng, nên nếu giặc cướp biết được sẽ tìm cách tấn công chiếm lấy. Các ông phải giữ bí mật về chiếc đĩa vàng, phải bảo vệ chiếc đĩa vàng cho bằng được, đem đến nơi an toàn. Dù có hy sinh thân mạng cũng phải hoàn thành mệnh lệnh của Đại Vương. Sáng mai các ông đến bái lạy trước sân Vua rồi ta tiễn các ông lên đường”.</p>
+        
+        <p class="dialogue"><span class="speaker">- Quan chánh sứ dặn tiếp:</span> “Ta giao cho Uppata làm đội trưởng. Uppata phải hết sức khôn ngoan khi qua mỗi đoạn đường khác nhau, dân tình khác nhau. Không phải ai cũng nể sợ uy đức của Đại Vương Bimbisara đâu, nhiều kẻ ngang tàng bất tuân sống lẩn lút đây đó. Nếu thành công chuyến này về, ta sẽ tâu Đại Vương ban thưởng nồng hậu cho các ông”.</p>
+        
+        <p>Buổi sáng, mười sứ giả cưỡi ngựa vượt qua cổng thành đi về phía nam. Các sứ giả cưỡi ngựa lên dốc cao. Các sứ giả cưỡi ngựa xuyên qua rừng rậm. Các sứ giả cho ngựa lội qua khúc sông cạn. Chiều tối, các sứ giả đi vào làng mạc, cho ngựa đi chậm, đến trại công đường để nghỉ lại. Trình lệnh bày, quan địa phương ân cần sắp xếp cơm nước nghỉ ngơi, lấy cỏ thóc cho ngựa ăn. Mặt trời mọc, 10 sứ giả lại cưỡi ngựa lên đường. Uppata ra lệnh đoàn người dừng lại. Mọi người thúc ngựa đến gần nghe Uppata nói chuyện:</p>
+        
+        <p class="dialogue"><span class="speaker">- Uppata:</span> “Này các hiền huynh đệ, ta sắp vào khúc đường vắng, hai bên là rừng rất dễ bị mai phục, nếu ta mặc quan phục thế này, chắc chắn kẻ cướp biết ta đi sứ phương xa và mang theo bảo vật, chúng sẽ chặn đánh để cướp. Hay là ta hóa trang thành những nông dân bình thường chăng?”</p>
+        
+        <p>- Một sứ giả nói: “Nông dân gì mà toàn trang phục quan, lại chẳng có dụng cụ làm ruộng cầm theo”.<br>
+        - Một sứ giả khác nói: “Ta hãy hóa trang thành dân thường, và chờ có thêm người đi để trà trộn vào”.</p>
+        
+        <p>Mọi người đồng ý và xuống ngựa thay quần áo, ngồi nghỉ dưới tán cây, lấy cơm ra ăn. Họ chia nhau ngủ và canh gác. Đến chiều một nhóm người già trẻ lẫn lộn đi tới. Các sứ giả đã thay đổi thường phục và làm quen với nhóm nông dân để cùng đi theo.</p>
+        
+        <p class="dialogue"><span class="speaker">- Một ông lão nói:</span> “Chắc chắn các vị ở xa đến, cẩn thận vậy là đúng, nhưng muộn rồi. Khu rừng chúng ta sắp qua hay có cướp. Bọn chúng có đặt người theo dõi mọi người qua lại ngay từ thị trấn vừa rồi. Các vị có hóa trang thì chúng cũng đã biết rồi”.</p>
+        
+        <p>Các sứ giả giật mình nhìn nhau chưa biết tính sao. Uppata nói:</p>
+        
+        <p class="dialogue"><span class="speaker">- Uppata:</span> “Trời đã chiều, chúng ta băng qua khu rừng này cũng không còn kịp nữa, thôi ta phải liều. Mọi người chuẩn bị vũ khí sẵn”.</p>
+        
+        <p>Các sứ giả dẫn ngựa đi chung với nhóm dân thường vào con đường rừng. Vào rừng thì bóng cây che cảnh vật không nhìn rõ nữa. Uppata đưa tay rờ lên cái túi đeo trước ngực, chạm vào chiếc đĩa như cầu nguyện sự linh ứng nào đó. Quả nhiên đúng như dự đoán, vào nửa đường là bọn cướp xuất hiện, hai mươi tên, cầm đủ loại vũ khí chặn giữa đường.</p>
+        
+        <p class="dialogue"><span class="speaker">- Ông lão lên tiếng:</span> “Chúng tôi là dân nghèo đi qua đây làm ruộng, không có tài sản gì, xin các ông cho qua”.</p>
+        
+        <p>Tên cướp lầm lì gật đầu cho ông lão và mọi người qua. Nhưng vừa đi ngang qua bọn cướp là bọn chúng dàn ra thành vòng tròn vây đoàn người lại ở giữa.</p>
+        
+        <p class="dialogue"><span class="speaker">- Tên đầu đảng nói:</span> “Có 10 tên trong các ngươi là quan binh ở phương bắc đi sứ xuống phương nam. Khôn hồn thì bỏ lại hết đồ vật và gươm giáo giấu ở trong người ra, trút hết xuống đất, thì ta tha cho mạng sống về với vợ con. Ta không nói lần thứ hai”.</p>
+        
+        <p>Uppata phất tay ra lệnh, cả 10 sứ giả rút gươm ra xoay thành vòng tròn bảo vệ nhóm thường dân vào giữa.</p>
+        
+        <p class="dialogue"><span class="speaker">- Tên đầu đảng nói:</span> “Lâu quá ta cũng chưa giết ai, hôm nay lấy máu bọn ngươi rửa gươm vậy”.</p>
+        
+        <p>Hắn phất tay ra lệnh, nguyên đám cướp bao vây cùng xông vào. Các sứ giả vung gươm chống đỡ quyết liệt. Tiếng vũ khí chạm nhau vang động cả khu rừng. Các sứ giả chuyên đi sứ xa nên được đào tạo chiến đấu rất giỏi, cầm cự với hai mươi tên cướp suốt thời gian dài. Có tia máu bắn ra, một sứ giả bị chém trúng vai. Chín người còn lại phải đương đầu với 20 tên cướp. Chợt có 3 hiệp khách bịt mặt phi ngựa lướt nhanh tới, chen thẳng vào giữa trận đấu, đi qua một khúc mới dừng ngựa và quay lại. Năm tên cướp ngã quỵ xuống trong vũng máu. Cả hai bên cùng dừng lại lui ra nhìn 3 hiệp khách bịt mặt.</p>
+        
+        <p class="dialogue"><span class="speaker">- Một hiệp khách nói:</span> “Chúng ta ít ghé xuống đây nên bọn phỉ tụi bây lộng hành quá. Nếu không buông gươm giáo xuống thì khi chiếc lá rơi chạm đất tụi bây sẽ chết sạch”.</p>
+        
+        <p>Nói xong một hiệp khách lấy ám khí ném lên ngọn cây. Một chiếc lá lìa cành rơi xuống. Cả bọn cướp thất kinh buông vũ khí xuống đất, trừ tên đầu đảng. Chiếc lá vừa chạm đất thì một hiệp khách thúc ngựa tới phóng mình khỏi yên ngựa bay xẹt qua mặt tên đầu đảng. Hắn kêu lên một tiếng, ngã xuống đất giãy giua rồi tắt hơi. Các tên còn lại mặt không còn chút máu quỳ lạy lia lịa.</p>
+        
+        <p class="dialogue"><span class="speaker">- Hiệp khách nói:</span> “Đáng lẽ ta bắt các ngươi đem về nộp cho quan binh trị tội, nhưng ta tha cho tụi bay. Nhưng tụi bây phải theo hầu hạ các sứ giả này đến nước Kukkuta, thì được trở về nhà làm ăn lương thiện. Giữa đường mà tụi bây giở trò thì ta lại xuất hiện giết sạch”.</p>
+        
+        <p>3 hiệp khách lại đi mất. Sứ giả gọi theo: <em>“Xin các hiệp khách cho biết quý danh…”</em>. Đoàn người kéo đi cho kịp ra khỏi khu rừng, cả các nông dân và các tên cướp. Đến thị trấn, các sứ giả đến công đường xin ở lại để trị liệu vết thương, các tên cướp thì cho ở ngoài chuồng ngựa.</p>
+        
+        <p>Buổi sáng, mọi người ăn uống và chuẩn bị lên đường. 10 sứ giả đi trên đường, hai bên là ruộng lúa. 10 sứ giả đi đến khu vực thị trấn và thấy nhà cửa ngăn nắp đẹp đẽ, đường sá rộng rãi, mọi người vui vẻ.</p>
+        
+        <p class="dialogue"><span class="speaker">- Uppata xuống ngựa chắp tay vái chào một ông già hỏi:</span> “Thưa cụ đây là xứ nào mà dân tình yên vui thanh bình quá vậy?”</p>
+        
+        <p class="dialogue"><span class="speaker">- Ông già mỉm cười nhìn đoàn sứ giả nói:</span> “Thưa các quan khách, đây là xứ Kukkuta ạ. Quan khách nói giọng phương bắc nghe lạ quá. May là tôi hồi trẻ cũng có đi buôn ở phương bắc nên còn nghe được đôi chút”.</p>
+        
+        <p>Uppata và đoàn sứ giả vui mừng reo lên: <em>“Ồ ta đến được xứ Kukkuta”</em>. Uppata hỏi ông già tiếp:</p>
+        
+        <p class="dialogue"><span class="speaker">- Uppata:</span> “Thưa cụ từ đây đến kinh đô của Vua Kappina còn bao xa ạ?”</p>
+        
+        <p class="dialogue"><span class="speaker">- Ông già đáp:</span> “Thưa quý quan khách, từ đây đi về chỗ của Vua mất hai ngày đường nữa. Giữa đường quý quan khách có thể nghỉ lại chỗ thị trấn nào cũng được. Dân chúng xứ Kukkuta chúng tôi hiền lành lắm. Giặc cướp không dám bén mảng đến xứ này. <span class="highlight">Uy đức của Vua Kappina như ánh mặt trời rọi khắp nơi, người dân ai cũng cảm mến Vua mà sống đời lương thiện</span>”.</p>
+        
+        <p class="dialogue"><span class="speaker">- Uppata:</span> “Thưa cụ, cụ vừa nói uy đức của Vua Kappina như ánh mặt trời nghĩa là sao ạ?”</p>
+        
+        <p class="dialogue"><span class="speaker-buddha">- Ông già đáp:</span> “Vua Kappina của chúng tôi sống như một vị Thánh, lúc nào cũng hiền từ nhân hậu, phong cách nghiêm trang đĩnh đạc, nói một lời là cả đất trời đều phải nghe”.</p>
+        
+        <p>Cả đoàn sứ giả mỉm cười kín đáo. Uppata lại hỏi:</p>
+        
+        <p class="dialogue"><span class="speaker">- Uppata:</span> “Cụ nói là Vua nói cả trời đất cũng phải nghe là sao ạ?”</p>
+        
+        <p class="dialogue"><span class="speaker">- Ông già đáp:</span> “Thưa các quan khách, có khi Vua đi thăm làng quê, gặp người dân than năm nay mưa đến muộn nên lo lắng hạn hán đói khổ. Vua nhìn lên trời bảo hãy mưa cho dân nhờ, thì chốc lát mây kéo đến và mưa to ầm ầm”.</p>
+        
+        <p>Đoàn sứ giả ngạc nhiên. Uppata hỏi:</p>
+        
+        <p class="dialogue"><span class="speaker">- Uppata:</span> “Chuyện này có thật sao cụ?”</p>
+        
+        <p class="dialogue"><span class="speaker">- Ông già đáp:</span> “Không phải chỉ có chuyện gọi mưa mà thôi, Vua còn làm nhiều chuyện khác phi thường nữa kìa. Có lần mưa nhiều nước lũ đổ về, nhà cửa bắt đầu trôi, Vua bảo thôi đừng mưa lũ nữa, ngay lập tức mưa dừng và nước lũ giảm dần. Còn người dân bệnh nan y, chữa mãi không hết, người nhà mang bệnh nhân đến trước cổng cung điện đợi Vua, thấy Vua bước ra thì quỳ xin Vua ban phúc, Vua thương tình đặt tay lên người là bệnh giảm dần”.</p>
+        
+        <p>Cả đoàn sứ giả nhìn nhau bắt đầu run sợ. Đoàn sứ giả chào ông lão rồi phi ngựa đi tiếp. Chiều tối ghé lại công đường xin ngủ. Vị quan địa phương này cũng hết lời xưng tán Vua của họ. Sáng ra đoàn lại khởi hành, nhà cửa gần kinh thành thì nhiều hơn, dân tình trông ai cũng hiền lành hiếu khách và hạnh phúc. Cổng thành hiện ra. Đoàn sứ giả trình thẻ lệnh của Vua Bimbisara. Lính gác cử người dẫn đoàn sứ giả đi về cung điện. Một lính khác chạy nhanh về cung Vua để bẩm báo trước. Đoàn sứ giả được các thị vệ đưa vào cung điện. Qua khỏi cánh cửa to là đại nghị đường. Vua Kappina ngồi trên ngai, các quan ngồi hai bên rất nhiều.</p>
+        
+        <p class="dialogue"><span class="speaker">- Đoàn sứ giả quỳ xuống lạy Vua rồi nói:</span> “Thưa Đại Vương Kappina của xứ Kukkuta, Đại Vương Bimbisara của chúng tôi ở Vương Quốc Magadha (Ma Kiệt Đà) vốn từ lâu coi trọng tình bằng hữu giữa hai nước. Dù núi sông cách trở xa xôi, nhưng Đại Vương Bimbisara của chúng tôi vẫn luôn nhớ thương Đại Vương Kappina của xứ Kukkuta. Vừa rồi Đại Vương Bimbisara của chúng tôi, vì nhớ nghĩ đến Đại Vương Kappina xứ Kukkuta nên đã cho đúc một chiếc đĩa bằng vàng, trên đó ghi chép bằng chữ Phạm Thiên mà các Đại Vương ở cõi Diêm Phù Đề đều đọc được. Các vị Bà La Môn cao quý cũng đều đọc được chữ viết của Phạm Thiên này. Nội dung trong chiếc đĩa vàng này nói về một đức Phật, bậc Đại Giác Ngộ, bậc Chánh Đẳng Giác, đã xuất hiện ở xứ Magadha, đã tuyên dương Chánh Pháp, đã lập nên một Tăng đoàn hùng mạnh gồm những Tỳ Kheo cũng chứng ngộ A La Hán cao siêu…”</p>
+        
+        <p>Vua Kappina bất giác rời khỏi ngai, run rẩy đi xuống trước đoàn sứ giả. Các sứ giả ngẩn người nhìn dung mạo Vua Kappina, rực sáng như ánh mặt trời, uy nghi như thiên tử, đẹp như ánh trăng. Mỗi bước Vua đi như phát ra nguồn sức mạnh vô hình lan tỏa ra chung quanh, Vua cũng quỳ xuống để đón nhận chiếc đĩa từ tay Uppata. Quần thần lật đật quỳ theo. Vua Kappina cầm chiếc đĩa đặt lên cái án cao, rồi quỳ xuống lạy. Quần thần cũng hướng về chiếc đĩa vàng mà lạy theo. Vua cầm chiếc đĩa lên, gọi thị vệ cầm đèn đến gần soi cho rõ, rồi đọc to cho quần thần cùng nghe:</p>
+        
+        <div class="quote-box">
+            "Hỡi Vua Kappina của xứ Kukkuta, hãy lắng nghe điều Đại Vương Bimbisara của xứ Magadha nói về đấng Đại Giác Gotama. Hỡi Vua Kappina, đấng Đại Giác đến từ xứ Sakiya, dòng dõi Gotama, tên gọi Shidattha, đã từ chối ngai vàng để xuất gia rồi chứng thành bậc Chánh Đẳng Giác siêu phàm. Ngài có đầy đủ Tam Minh Lục Thông, có thể nhớ lại vô lượng kiếp trước của mình, có thể thấy được sự lưu chuyển của chúng sinh trong các cõi giới, có thể thấu được chân lý tột cùng của Pháp giới vũ trụ. Chư Thiên tử gọi Ngài là bậc Đạo Sư của Tam Giới. Các chúng sinh quỳ xuống gọi Ngài là đấng Cha Lành của mọi loài. Ngài đã dạy về Tứ Diệu Đế, Bát Chánh Đạo, Tứ Thánh Quả, Tứ Thiền, và vô số các bài Kinh cao quý khác. Từ nơi lời dạy của Ngài mà rất nhiều người đã xuất gia rồi cũng chứng đạt Tam Minh Lục Thông để thành bậc A La Hán. Ngoài ra rất nhiều người cũng chứng các bậc Thánh cao hơn. Đại Vương Bimbisara muốn gửi thông điệp này đến Vua Kappina xứ Kukkuta biết mà khởi tâm tôn kính bậc Chánh Đẳng Giác đã đến với trần gian. Thân Ái."
+        </div>
+        
+        <p>Vua đọc xong im lặng không nói. Quần thần cũng im lặng không nói. Bầu không khí thật kỳ lạ. 10 sứ giả nhìn nhau không hiểu chuyện gì, cũng im lặng không nói.</p>
+        
+        <p class="dialogue"><span class="speaker-buddha">- Vua Kappina bước lên bục nói với quần thần:</span> “Này các quan tướng, các người đã trung thành với phụ vương của ta, rồi bây giờ phò ta. Ta chưa lập hoàng hậu nên chưa có thái tử. <span class="highlight">Kể từ khi đọc được lời của chiếc đĩa vàng này, ta đã quyết định rời bỏ ngai vàng để tìm về Magadha theo đức Phật Chánh Giác để xuất gia</span>”.</p>
+        
+        <p>Cả triều thần nhoa nhao như ong vỡ tổ. Vua khoát tay ra lệnh im lặng, rồi nói tiếp:</p>
+        
+        <p class="dialogue"><span class="speaker-buddha">- Vua Kappina:</span> “Ta tạm thời giao lại quyền hành cho Raccha, để rồi sau đó các ngươi tự chọn ra Vua mới, ta không thể chờ thêm giây phút nào nữa. Hãy đem ngựa lại cho ta”.</p>
+        
+        <p>Vua bước ra khỏi cánh cổng to của đại nghị đường. 10 sứ giả ngơ ngác lật đật chạy theo. 12 vị quan cũng quay lại nói với mọi người rằng: <em>“Tôi sống chết theo Vua, Vua xuất gia, tôi cũng xuất gia”</em>, rồi chạy theo Vua luôn.</p>
+        
+        <p>Vua bước ra tới sân thì các quan cũng đem ngựa đến. 12 vị quan quỳ xuống xin theo. Vua gật đầu và khoát tay ra lệnh cho đem ngựa đến. Các sứ giả cũng lật đật nhảy lên ngựa sẵn sàng luôn, chưa kịp nghỉ ngơi gì cả.</p>
+        
+        <p>Trời đã xế chiều. Vua dẫn đầu đoàn người cưỡi ngựa ra đi khỏi cổng thành, đằng sau lưng mọi người đi theo tiễn. Tin đồn lan ra rất nhanh, dân trong thành kéo hết ra cổng thành kêu khóc vang trời. Nhưng bóng đoàn người đã đi rất xa. Trời tối phủ xuống cả kinh thành Kukkuta. Mọi người ngơ ngác khóc lóc không hiểu chuyện gì xảy ra cho đất nước của họ. Đoàn người của Vua Kappina đi mất hút, đoàn sứ giả phải dừng lại vì người và ngựa đi cả ngày mệt quá, chưa ăn uống gì, họ đành phải ghé lại quán trọ để nghỉ ngơi.</p>
+        
+        <p>Vua và 12 cận thần phóng ngựa vượt qua thị trấn làng mạc trong đêm luôn. Có vầng ánh sáng lạ cứ soi đường cho họ. Chẳng hiểu sao họ vượt rừng, băng suối, qua đèo suốt 5 ngày không dừng nghỉ mà cả người và ngựa chẳng ai mệt cả. Trước mặt họ xa xa là con sông lớn nước chảy cuồn cuộn.</p>
+        
+        <p class="dialogue"><span class="speaker-buddha">- Vua Kappina nói to:</span> “<span class="highlight">Lòng ta chỉ có đấng Chánh Giác, ngựa ta sẽ không chìm</span>”.</p>
+        
+        <p>Rồi Vua thúc ngựa phóng xuống nước luôn. Các cận thần cũng phóng ngựa theo xuống nước. Lạ thay, đoàn ngựa vẫn sải vó ào ào như đi trên đường đất. Chẳng mấy chốc đã sang đến bờ bên kia. Đoàn người cưỡi ngựa vẫn phóng ào ào chẳng cơm nước ngủ nghỉ gì cả, băng qua làng mạc, thị trấn, rừng ruộng…</p>
+        
+        <p>Tại Tinh Xá Trúc Lâm:</p>
+        
+        <p class="dialogue"><span class="speaker-buddha">- Đức Phật bảo:</span> “Này Moggalana, hãy đi đón Maha Kappina”.</p>
+        
+        <p>Nhiều vị Tỳ Kheo đi theo sau đức Phật ra khỏi Tinh Xá. Vừa đến cổng Tinh Xá thì đức Phật và các vị Tỳ Kheo đều biến mất. Núi rừng nhìn từ trên cao. Bên bờ sông Candabhaga, Đức Phật và các Tôn Giả Tỳ Kheo hiện ra gần bờ sông. Đức Phật và các Tỳ Kheo ngồi trên bãi cỏ, dưới các tàng cây. Trời chiều xâm xẩm tối, nơi Đức Phật và các Tôn Giả Tỳ Kheo ngồi tỏa ra vầng hào quang sáng rực.</p>
+        
+        <p>Đoàn của Vua Kappina từ bên kia sông phóng ngựa vượt sông băng băng trên mặt nước. Vừa đến bờ sông, Vua Kappina nhìn lên thấy Đức Phật và chư vị Tỳ Kheo ngồi với hào quang sáng tỏa.</p>
+        
+        <p class="dialogue"><span class="speaker">- Vua Kappina reo lên:</span> “Đức Phật Chánh Giác đây rồi, Đức Phật Chánh Giác đây rồi…”</p>
+        
+        <p>Vua Kappina nhảy xuống ngựa, các cận thần nhảy xuống theo. Vua băng băng chạy ngược dốc của bờ sông lên đến chỗ Đức Phật, quỳ xuống lạy Phật thành kính, các cận thần cũng quỳ lạy theo.</p>
+        
+        <p class="dialogue"><span class="speaker-buddha">- Đức Phật nói:</span> “Này Maha Kappina, giải thoát cũng giống như một người đi trên lộ trình rất dài mà không bao giờ dừng lại. Tâm của người giác ngộ không bao giờ có một chút mê mờ mất chánh niệm tỉnh giác”.</p>
+        
+        <p>Ngay giây phút đó, Vua Maha Kappina và các cận thần cùng <span class="highlight">chứng quả A La Hán</span>, toàn thân rực sáng hào quang.</p>
+        
+        <p class="dialogue"><span class="speaker-buddha">- Đức Phật bảo:</span> “Lành thay, hãy đến đây các Tỳ Kheo”.</p>
+        
+        <p>Ngay lúc đó, y phục Vua và các cận thần biến thành ca sa, tóc trên đầu biến mất. Đức Phật và đoàn các Tôn Giả Tỳ Kheo cất mình lên hư không bay từ từ về Tinh Xá Trúc Lâm.</p>
+        
+        <div class="source">Trích “Đỉnh Núi Tuyết – tập 37: Ngựa Chạy Trên Sông” – Thượng Tọa Thích Chân Quang</div>
+    </div>
+
+</body>
+</html>

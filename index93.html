@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Người Trí Và Người Ngu - Đỉnh Núi Tuyết</title>
+    <style>
+        /* Thiết lập nền cho toàn trang */
+        body, html {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            /* Ảnh nền cảnh thiên nhiên u tịch và trang nghiêm */
+            background-image: url('https://images.unsplash.com/photo-1518173946687-a4c88986a987?q=80&w=2500&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #f1f1f1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Khung chứa nội dung mờ ảo để dễ đọc chữ */
+        .container {
+            background-color: rgba(10, 15, 30, 0.84); /* Nền tối bán trong suốt */
+            backdrop-filter: blur(8px); /* Hiệu ứng kính mờ */
+            max-width: 850px;
+            padding: 40px 50px;
+            margin: 40px 20px;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.7);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            line-height: 1.8;
+            font-size: 1.12rem;
+        }
+
+        h1 {
+            text-align: center;
+            color: #ffd700;
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            line-height: 1.4;
+        }
+
+        p {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .dialogue {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .speaker-buddha {
+            font-weight: bold;
+            color: #ffd700;
+        }
+
+        .highlight {
+            color: #ffd700;
+            font-weight: bold;
+        }
+
+        .source {
+            text-align: center;
+            font-style: italic;
+            color: #d1e1f0;
+            margin-top: 35px;
+            font-size: 1.1rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            padding-top: 20px;
+            letter-spacing: 1px;
+        }
+
+        /* Hiệu ứng thanh cuộn đẹp mắt */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: rgba(0, 0, 0, 0.3); 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.3); 
+            border-radius: 5px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(255, 255, 255, 0.6); 
+        }
+
+        /* Responsive cho điện thoại */
+        @media (max-width: 600px) {
+            .container {
+                padding: 25px;
+                font-size: 1rem;
+            }
+            h1 {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Người Trí Và Người Ngu</h1>
+        
+        <p class="dialogue"><span class="speaker-buddha">- Đức Phật dạy:</span> Này Maha Kaccayana, Như Lai sẽ nói cho các ngươi nghe về người trí và người ngu.</p>
+        
+        <p class="dialogue"><span class="speaker-buddha">- Đức Phật:</span> Này Maha Kaccayana, <span class="highlight">người ngu là người không tin có đời này, đời sau, không tin có nghiệp và quả báo của nghiệp, không tin có cõi trời hay địa ngục, không tin có sự giải thoát của sinh tử, không thấy được bản ngã chỉ là sự giả hợp của năm thủ uẩn (sắc, thọ, tưởng, hành, thức), không biết con đường Bát Chánh.</span></p>
+        
+        <p class="dialogue"><span class="speaker-buddha">- Đức Phật:</span> Này Maha Kaccayana, <span class="highlight">người trí là người tin có tái sinh, tin có nghiệp và sự báo ứng của nghiệp, tin có các cõi trời hay địa ngục, tin có sự giải thoát khỏi luân hồi, hiểu được khổ, nguyên nhân của khổ, thấy được sự diệt khổ và con đường Bát Chánh đưa đến sự diệt khổ đó.</span></p>
+        
+        <p class="dialogue"><span class="speaker-buddha">- Đức Phật:</span> Này Maha Kaccayana, ngay khi phải sống bằng xác thân này, nhưng người trí thường quán tưởng sắc thân này chỉ là sự tạm bợ vô thường, chỉ là sự kết hợp của tứ đại (đất, nước, gió, lửa), các khúc xương, thịt, gân gắn kết với nhau, các chất máu, dịch, tủy trộn lẫn với nhau, ngày đêm thường tiết ra các chất bất tịnh, ngày nào đó rồi sắc thân này cũng phải già, phải bệnh, phải chết. Xác bị đem quăng ngoài thi lâm bị các côn trùng rúc rỉa hay dã thú cắn xé. Cuối cùng các xương cũng mục tàn thành bụi lẫn vào đất.</p>
+        
+        <p class="dialogue"><span class="speaker-buddha">- Đức Phật:</span> Này Maha Kaccayana, người trí thường quan sát các cảm thọ khởi lên trong thân tâm mình, biết rõ tất cả chỉ là sự vọng động, luôn thay đổi, hay nhàm chán, và khiến chúng sinh vì tránh khổ tìm vui mà tạo ra biết bao nhiêu nghiệp chướng nặng nề.</p>
+        
+        <p class="dialogue"><span class="speaker-buddha">- Đức Phật:</span> Này Maha Kaccayana, người trí quán sát các suy nghĩ lăng xăng không dứt trong tâm mình chính là sự vọng động mê mờ, khiến cho tâm mình không còn tỉnh giác sáng suốt, khiến cho bản ngã càng nặng nề hơn.</p>
+        
+        <p class="dialogue"><span class="speaker-buddha">- Đức Phật:</span> Này Maha Kaccayana, người trí quan sát thấy tâm hành, cái mà điều khiển tất cả hành động của thân thể, cái mà điều khiển mọi tư duy lý luận, chính là hang ổ của ngã chấp, chính là mớ cuồng vọng si mê.</p>
+        
+        <p class="dialogue"><span class="speaker-buddha">- Đức Phật:</span> Này Maha Kaccayana, người trí thấy rõ cái biết như là bất động kia cũng chỉ là vô thường biến dịch, từ bản ngã vô minh mà lưu xuất, vẫn chưa phải là bờ bến an ổn.</p>
+        
+        <p class="dialogue"><span class="speaker-buddha">- Đức Phật:</span> Này Maha Kaccayana, thế nào là Bát Chánh Đạo...</p>
+        
+        <div class="source">Trích: Bộ truyện tranh song ngữ Việt Anh: ĐỈNH NÚI TUYẾT tập 24 trang 79, 80, 81, 82, 83, 84, 85</div>
+    </div>
+
+</body>
+</html>

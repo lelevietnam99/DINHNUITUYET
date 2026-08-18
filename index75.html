@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bậc Thượng Nhân Giữa Đời - Đỉnh Núi Tuyết</title>
+    <style>
+        /* Thiết lập nền cho toàn trang */
+        body, html {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            /* Ảnh nền thanh tịnh, trang nghiêm */
+            background-image: url('https://images.unsplash.com/photo-1518173946687-a4c88986a987?q=80&w=2500&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #f1f1f1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Khung chứa nội dung mờ ảo để dễ đọc chữ */
+        .container {
+            background-color: rgba(10, 15, 30, 0.82); /* Nền tối bán trong suốt */
+            backdrop-filter: blur(8px); /* Hiệu ứng kính mờ */
+            max-width: 800px;
+            padding: 40px 50px;
+            margin: 40px 20px;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.7);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            line-height: 1.8;
+            font-size: 1.12rem;
+        }
+
+        h1 {
+            text-align: center;
+            color: #ffd700;
+            font-size: 1.9rem;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            line-height: 1.4;
+        }
+
+        .quote-box {
+            margin-bottom: 25px;
+            text-align: justify;
+            font-style: italic;
+            border-left: 4px solid #ffd700;
+            padding-left: 15px;
+            background-color: rgba(255, 255, 255, 0.04);
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .highlight {
+            color: #ffd700;
+            font-weight: bold;
+            font-style: normal;
+        }
+
+        .source {
+            text-align: center;
+            font-style: italic;
+            color: #d1e1f0;
+            margin-top: 35px;
+            font-size: 1.1rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            padding-top: 20px;
+            letter-spacing: 1px;
+        }
+
+        /* Hiệu ứng thanh cuộn đẹp mắt */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: rgba(0, 0, 0, 0.3); 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.3); 
+            border-radius: 5px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(255, 255, 255, 0.6); 
+        }
+
+        /* Responsive cho điện thoại */
+        @media (max-width: 600px) {
+            .container {
+                padding: 25px;
+                font-size: 1rem;
+            }
+            h1 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Bậc Thượng Nhân Giữa Đời</h1>
+        
+        <div class="quote-box">
+            "Bạch Thế Tôn, vì không đủ phúc duyên nên chúng sinh đời sau sẽ không hiểu được Chánh Pháp của Thế Tôn để lại. Họ sẽ suy diễn chánh pháp theo ý mình, mà nguy hiểm nhất là suy diễn theo hướng làm mọi người suy giảm lòng tôn kính đối với Thế Tôn. Đã kém phúc duyên, chúng sinh lại càng suy giảm phúc duyên bởi các luận điệu nguy hiểm đó."
+        </div>
+        
+        <div class="quote-box">
+            "Bạch Thế Tôn, chúng con lớn lên trong Chánh Pháp chính nhờ vào lòng tôn kính tuyệt đối với Thế Tôn, nếu sau này vì xa cách Thế Tôn mà chúng sinh giảm đi lòng tôn kính Thế Tôn thì thật là một đại bất hạnh. Những đời sau, nếu ai có thể giữ gìn lòng tôn kính Thế Tôn cho chúng sinh, đó chính là <span class="highlight">bậc thượng nhân giữa đời</span>, sẽ được Chư Thiên thủ hộ, được nhiều phúc báo khó nghĩ bàn."
+        </div>
+        
+        <div class="source">(Trích truyện: Đỉnh Núi Tuyết)</div>
+    </div>
+
+</body>
+</html>
